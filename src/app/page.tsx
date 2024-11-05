@@ -1,9 +1,9 @@
-import { Button } from "@/components/ui/button";
+import Footer from "@/components/navigation/Footer";
 
 export default function Home() {
   return (
-    <div className="grid place-content-center h-96">
-      <Button variant="default">hello</Button>
+    <div>
+      <Footer />
     </div>
   );
 }
