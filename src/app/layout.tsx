@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import NavBar from "@/components/navigation/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
+import MobileNav from "@/components/navigation/MobileNav";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -45,6 +46,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <NavBar />
+          <MobileNav />
           {children}
         </ThemeProvider>
       </body>
