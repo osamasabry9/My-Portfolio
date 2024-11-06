@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-import React from 'react'
-
-const AboutSection = () => {
-  return (
-    <div>AboutSection</div>
-  )
-}
-
-export default AboutSection
-=======
 import SectionTitle from "@/components/SectionTitle";
 import { buttonVariants } from "@/components/ui/button";
 import { Effect } from "@/components/ui/effects";
@@ -78,4 +67,3 @@ const AboutSection = () => {
 };
 
 export default AboutSection;
->>>>>>> 6491077fa574468ca226689f55b93cb087045e34
