@@ -33,7 +33,6 @@ export default defineType({
         list: [
           { title: "Frontend", value: "Frontend" },
           { title: "Backend", value: "Backend" },
-          { title: "Flutter", value: "Flutter" },
           { title: "Mobile App", value: "Mobile App" },
           { title: "Tools", value: "Tools" },
         ],
