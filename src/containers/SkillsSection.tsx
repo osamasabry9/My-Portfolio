@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-import React from 'react'
-
-const SkillsSection = () => {
-  return (
-    <div>SkillsSection</div>
-  )
-}
-
-export default SkillsSection
-=======
 import SectionTitle from "@/components/SectionTitle";
 import { Effect } from "@/components/ui/effects";
 import { getSkills } from "@/lib/skills";
@@ -66,4 +55,3 @@ const SkillsSection = async () => {
 };
 
 export default SkillsSection;
->>>>>>> 6491077fa574468ca226689f55b93cb087045e34
