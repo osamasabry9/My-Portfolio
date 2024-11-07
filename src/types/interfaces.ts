@@ -38,3 +38,10 @@ export interface Project {
   isResponsive: boolean;
   tags: string[];
 }
+
+
+export interface AboutMe {
+  _id: string;
+  jobTitle: string;
+  summary: string;
+}
