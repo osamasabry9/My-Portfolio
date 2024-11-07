@@ -7,8 +7,6 @@ export interface SocialLink {
 export interface NavLinks extends SocialLink {
   title: string;
 }
-<<<<<<< HEAD
-=======
 
 export interface Statistic {
   label: string;
@@ -28,4 +26,3 @@ export interface TabItem {
   icon: LucideIcon;
   label: SkillsCategory;
 }
->>>>>>> 6491077fa574468ca226689f55b93cb087045e34
