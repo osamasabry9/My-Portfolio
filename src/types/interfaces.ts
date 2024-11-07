@@ -31,14 +31,13 @@ export interface Project {
   _id: string;
   title: string;
   description: string;
-  images: any[];
+  images: never[];
   demoLink: string;
   githubLink: string;
   publishedAt: Date;
   isResponsive: boolean;
   tags: string[];
 }
-
 
 export interface AboutMe {
   _id: string;
