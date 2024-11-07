@@ -1,5 +1,6 @@
 import Footer from "@/components/navigation/Footer";
 import NavBar from "@/components/navigation/navbar";
+import ScrollToTop from "@/components/ScrollToTop";
 import AboutSection from "@/containers/AboutSection";
 import ContactSection from "@/containers/ContactSection";
 import HomeSection from "@/containers/HomeSection";
@@ -17,6 +18,7 @@ export default function Home() {
         <ProjectsSection />
         <ContactSection />
       </div>
+      <ScrollToTop />
       <Footer />
     </main>
   );
