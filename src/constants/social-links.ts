@@ -1,10 +1,10 @@
 import { SocialLink } from "@/types/interfaces";
-import { Facebook, Github, Linkedin } from "lucide-react";
+import { Github, Linkedin, Twitter } from "lucide-react";
 
 export const socialLinks: SocialLink[] = [
   {
-    href: "https://facebook.com",
-    icon: Facebook,
+    href: "https://x.com/o_sabri7",
+    icon: Twitter,
   },
   {
     href: "https://github.com/osamasabry9",

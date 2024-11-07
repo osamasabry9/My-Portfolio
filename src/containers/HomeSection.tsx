@@ -1,12 +1,14 @@
 import { buttonVariants } from "@/components/ui/button";
 import { Effect } from "@/components/ui/effects";
 import { socialLinks } from "@/constants/social-links";
+import { getAboutMe } from "@/lib/aboutMe";
 import { cn } from "@/lib/utils";
 import { ArrowRightCircle, Download } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 
-const HomeSection = () => {
+const HomeSection = async () => {
+  const { jobTitle, summary } = await getAboutMe();
   return (
     <section id="home" className="grid md:grid-cols-12 items-center gap-6 ">
       {/* Social links */}
@@ -28,19 +30,10 @@ const HomeSection = () => {
           hi, i&apos;m Ossama
         </h2>
         <h5 className="text-xl md:text-2xl font-semibold capitalize">
-          Software Developer
+          {jobTitle}
         </h5>
         <p className="leading-7 md:text-lg text-sm md:max-w-[85%] text-center md:text-start">
-          With a B.Sc. in Computer Science and more than three years of
-          practical experience creating scalable front-end solutions for online
-          and mobile platforms, this person is a highly driven and meticulous
-          mobile application developer. Strong foundation in full-stack
-          development and proficiency with React Native and Flutter for mobile
-          applications. Knowledgeable about HTML5, CSS3, JavaScript, and using
-          responsive design concepts for the best possible performance on a
-          variety of devices. Knowledgeable about working directly with UI/UX
-          designers to convert their ideas into code. Enthusiastic about
-          improving application speed and producing clear, maintainable code.
+          {summary}
         </p>
         <div className="flex items-center gap-2 py-4">
           <a
