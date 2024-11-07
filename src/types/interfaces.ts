@@ -26,3 +26,15 @@ export interface TabItem {
   icon: LucideIcon;
   label: SkillsCategory;
 }
+
+export interface Project {
+  _id: string;
+  title: string;
+  description: string;
+  images: any[];
+  demoLink: string;
+  githubLink: string;
+  publishedAt: Date;
+  isResponsive: boolean;
+  tags: string[];
+}
