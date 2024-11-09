@@ -19,7 +19,10 @@ interface ProjectItemProps {
 }
 
 const ProjectItem: FC<ProjectItemProps> = ({ project }) => {
-  const imageFormat = urlFor(project.images[0]).url();
+  const imageFormat = urlFor(project.images[0])
+    .quality(100)
+    .auto("format")
+    .url();
 
   return (
     <Dialog>

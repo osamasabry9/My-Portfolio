@@ -15,9 +15,11 @@ const ProjectCard: FC<ProjectCardProps> = ({ imageUrl, title }) => {
         width={220}
         height={220}
         alt={title}
+        quality={100} // Set the quality (1-100, default is 75)
+        priority // Optionally prioritize loading this image
         className="size-full rounded-sm group-hover:scale-105 transition"
       />
-      <h3 className="absolute bottom-2 start-2 text-foreground group-hover:text-primary capitalize truncate font-semibold">
+      <h3 className="absolute bottom-2 start-2 text-foreground group-hover:text-primary group-hover:bg-foreground/60  capitalize truncate font-semibold">
         {title}
       </h3>
     </article>
