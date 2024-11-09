@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://ossama-erhy.vercel.app/
+
+# Sitemaps
+Sitemap: https://ossama-erhy.vercel.app/sitemap.xml
